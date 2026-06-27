@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redrob Ranker — Presentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0a0a1a;
+            color: #e2e8f0;
+        }
+
+        .slide {
+            width: 100%;
+            min-height: 100vh;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Slide backgrounds */
+        .slide-hero {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            text-align: center;
+        }
+        .slide-dark {
+            background: linear-gradient(180deg, #0a0a1a 0%, #1a1a2e 100%);
+        }
+        .slide-accent {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #a78bfa;
+            margin-bottom: 24px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #818cf8;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a0aec0;
+            font-weight: 300;
+        }
+        .team-info {
+            margin-top: 40px;
+            padding: 20px 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: inline-block;
+        }
+        .team-info p { font-size: 1rem; color: #a0aec0; margin: 4px 0; }
+        .team-info strong { color: #e2e8f0; }
+
+        /* Grid layouts */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+        /* Cards */
+        .card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+        }
+        .card-metric {
+            text-align: center;
+            padding: 28px 20px;
+        }
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .metric-label {
+            color: #a0aec0;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 6px;
+        }
+
+        /* Lists */
+        ul { list-style: none; padding: 0; }
+        ul li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #cbd5e0;
+        }
+        ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        th {
+            text-align: left;
+            padding: 12px 16px;
+            background: rgba(102, 126, 234, 0.15);
+            color: #a78bfa;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+        }
+        td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.95rem;
+        }
+        tr:hover td { background: rgba(255,255,255,0.03); }
+
+        /* Code blocks */
+        code {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: #a78bfa;
+        }
+        pre {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            overflow-x: auto;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        /* Flow diagram */
+        .flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            margin: 30px 0;
+        }
+        .flow-step {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            padding: 16px 20px;
+            text-align: center;
+            min-width: 140px;
+        }
+        .flow-step .step-num {
+            font-size: 0.7rem;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .flow-step .step-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-top: 4px;
+        }
+        .flow-arrow {
+            color: #667eea;
+            font-size: 1.4rem;
+            padding: 0 8px;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge-green { background: rgba(72,187,120,0.15); color: #48bb78; border: 1px solid rgba(72,187,120,0.3); }
+        .badge-blue { background: rgba(102,126,234,0.15); color: #667eea; border: 1px solid rgba(102,126,234,0.3); }
+        .badge-purple { background: rgba(159,122,234,0.15); color: #9f7aea; border: 1px solid rgba(159,122,234,0.3); }
+
+        /* Score bars */
+        .score-row { display: flex; align-items: center; margin-bottom: 12px; }
+        .score-label { width: 200px; font-size: 0.9rem; color: #a0aec0; }
+        .score-bar-bg {
+            flex: 1;
+            height: 20px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 12px;
+        }
+        .score-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        .score-weight { width: 60px; text-align: right; font-size: 0.85rem; color: #667eea; font-weight: 600; }
+
+        .highlight-box {
+            background: rgba(102, 126, 234, 0.08);
+            border-left: 3px solid #667eea;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            color: rgba(255,255,255,0.2);
+            font-size: 0.8rem;
+        }
+
+        @media print {
+            .slide { min-height: 100vh; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- SLIDE 1: Title -->
+<!-- ============================================================ -->
+<div class="slide slide-hero">
+    <h1>Redrob AI Ranker</h1>
+    <p class="subtitle">Intelligent Candidate Discovery & Ranking<br>for Senior AI Engineer</p>
+    <div class="team-info">
+        <p><strong>Team Name:</strong> sathvik-v</p>
+        <p><strong>Problem Statement:</strong> AI-Powered Candidate Ranking</p>
+        <p><strong>Team Leader:</strong> Sathvik V (Solo)</p>
+    </div>
+    <span class="page-number">1</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 2: Solution Overview -->
+<!-- ============================================================ -->
+<div class="slide slide-dark">
+    <h2>Solution Overview</h2>
+    <div class="grid-2">
+        <div>
+            <h3>What is the Proposed Solution?</h3>
+            <p style="color: #cbd5e0; line-height: 1.8; margin-bottom: 24px;">
+                A <strong>5-stage pipeline</strong> that replaces keyword matching with 
+                <strong>career-narrative analysis</strong>. Instead of counting keyword hits, 
+                the system reads a candidate's entire career story — where they worked, 
+                what they built, how long they stayed — and scores them across 
+                <strong>6 orthogonal dimensions</strong> calibrated to this specific JD.
+            </p>
+            <div class="flow">
+                <div class="flow-step"><div class="step-num">Stage 1</div><div class="step-name">Filter</div></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><div class="step-num">Stage 2-3</div><div class="step-name">Score</div></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><div class="step-num">Stage 4</div><div class="step-name">Honeypot</div></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step"><div class="step-num">Stage 5</div><div class="step-name">Reason</div></div>
+            </div>
+        </div>
+        <div>
+            <h3>What Differentiates This Approach?</h3>
+            <ul>
+                <li><strong>Career coherence scoring</strong> — penalizes all-consulting backgrounds and title-chasers (< 18mo avg tenure), rewards product-company depth</li>
+                <li><strong>Skill authenticity checks</strong> — cross-references claimed skills against career descriptions (listing FAISS without ever mentioning search = suspicious)</li>
+                <li><strong>Behavioral signal fusion</strong> — treats response rate, recency, and notice period as 15% of the total score (most teams ignore this)</li>
+                <li><strong>6-check honeypot detector</strong> — catches impossible profiles before they contaminate rankings</li>
+                <li><strong>No LLM calls</strong> — runs in 68s on CPU using TF-IDF with trigrams</li>
+            </ul>
+        </div>
+    </div>
+    <span class="page-number">2</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 3: JD Understanding -->
+<!-- ============================================================ -->
+<div class="slide slide-accent">
+    <h2>JD Understanding & Candidate Evaluation</h2>
+    <div class="grid-2">
+        <div>
+            <h3>Key Requirements Extracted from JD</h3>
+            <table>
+                <thead><tr><th>Category</th><th>Requirements</th></tr></thead>
+                <tbody>
+                    <tr><td>Must-Have Skills</td><td>Embeddings/retrieval, Python/ML frameworks, ranking/reranking, vector databases, evaluation (NDCG/MRR)</td></tr>
+                    <tr><td>Nice-to-Have</td><td>LLM fine-tuning, learning-to-rank, HR-tech domain, distributed systems, open-source</td></tr>
+                    <tr><td>Experience</td><td>5-8 years (2-20 accepted), product > services</td></tr>
+                    <tr><td>Location</td><td>Pune/Noida preferred, India metros welcome</td></tr>
+                    <tr><td>Work Mode</td><td>Hybrid-flexible</td></tr>
+                    <tr><td>Anti-Patterns</td><td>Keyword stuffing, title-chasing, consulting-only</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Candidate Signals Beyond Keywords</h3>
+            <ul>
+                <li><strong>Career description text</strong> — what they actually built, not what they list as skills</li>
+                <li><strong>Proficiency × duration</strong> — "expert" in TensorFlow for 36 months > "expert" for 2 months</li>
+                <li><strong>Company type analysis</strong> — product companies (Google, Amazon) vs consulting firms (TCS, Infosys)</li>
+                <li><strong>Role progression</strong> — IC → Senior → Staff in tech track is positive; lateral moves across non-tech roles is negative</li>
+                <li><strong>Platform engagement</strong> — response rate, last-active recency, interview completion rate</li>
+                <li><strong>Skill-career corroboration</strong> — do their career descriptions actually mention the skills they claim?</li>
+            </ul>
+        </div>
+    </div>
+    <span class="page-number">3</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 4: Ranking Methodology -->
+<!-- ============================================================ -->
+<div class="slide slide-dark">
+    <h2>Ranking Methodology</h2>
+    <h3>6-Dimension Scoring Model</h3>
+    <div style="margin: 20px 0;">
+        <div class="score-row">
+            <div class="score-label">Career Coherence</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 100%;"></div></div>
+            <div class="score-weight">25%</div>
+        </div>
+        <div class="score-row">
+            <div class="score-label">Skill Authenticity</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 100%;"></div></div>
+            <div class="score-weight">25%</div>
+        </div>
+        <div class="score-row">
+            <div class="score-label">JD Semantic Alignment</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 80%;"></div></div>
+            <div class="score-weight">20%</div>
+        </div>
+        <div class="score-row">
+            <div class="score-label">Behavioral Availability</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 60%;"></div></div>
+            <div class="score-weight">15%</div>
+        </div>
+        <div class="score-row">
+            <div class="score-label">Location Fit</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 40%;"></div></div>
+            <div class="score-weight">10%</div>
+        </div>
+        <div class="score-row">
+            <div class="score-label">Education & Credibility</div>
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width: 20%;"></div></div>
+            <div class="score-weight">5%</div>
+        </div>
+    </div>
+
+    <div class="grid-2" style="margin-top: 20px;">
+        <div>
+            <h3>How Signals Are Combined</h3>
+            <ul>
+                <li>Each dimension scores 0 to max points (25, 25, 20, 15, 10, 5)</li>
+                <li>Normalized to 0–1 range, then multiplied by weight</li>
+                <li><code>final = Σ(dim_score / max_pts × weight)</code></li>
+                <li>JD alignment uses TF-IDF with <code>sim^0.6</code> stretch to separate top candidates</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Models & Algorithms Used</h3>
+            <ul>
+                <li><strong>TF-IDF</strong> — scikit-learn vectorizer with trigrams (1,3) for semantic matching</li>
+                <li><strong>Cosine similarity</strong> — candidate text vs JD reference vector</li>
+                <li><strong>Rule-based scoring</strong> — handcrafted for this specific JD's requirements</li>
+                <li><strong>No ML model training</strong> — all weights are JD-derived, not data-fitted</li>
+            </ul>
+        </div>
+    </div>
+    <span class="page-number">4</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 5: Explainability & Honeypots -->
+<!-- ============================================================ -->
+<div class="slide slide-accent">
+    <h2>Explainability & Data Validation</h2>
+    <div class="grid-2">
+        <div>
+            <h3>How Rankings Are Explained</h3>
+            <p style="color: #cbd5e0; line-height: 1.7; margin-bottom: 16px;">
+                Each candidate gets a <strong>1-2 sentence reasoning</strong> using 5 rotating patterns:
+            </p>
+            <div class="card" style="margin-bottom: 12px;">
+                <p style="font-size: 0.85rem; color: #48bb78;">Rank #2 (score: 0.8025)</p>
+                <p style="font-style: italic; color: #e2e8f0;">"6-year career spanning Genpact AI, LinkedIn; demonstrates production embeddings & retrieval experience and including product-company experience."</p>
+            </div>
+            <div class="card" style="margin-bottom: 12px;">
+                <p style="font-size: 0.85rem; color: #ecc94b;">Rank #42 (score: 0.7208)</p>
+                <p style="font-style: italic; color: #e2e8f0;">"Strong career coherence profile — 11 years with depth in OpenCV, JavaScript, Go; matches the JD need for Python & ML proficiency. Note: not currently marked open to work."</p>
+            </div>
+            <div class="card">
+                <p style="font-size: 0.85rem; color: #fc8181;">Rank #92 (score: 0.6913)</p>
+                <p style="font-style: italic; color: #e2e8f0;">"7-year career spanning Freshworks, Netflix; demonstrates production embeddings experience. Caveat: borderline fit — 90-day notice period."</p>
+            </div>
+        </div>
+        <div>
+            <h3>Honeypot Detection (6 Checks)</h3>
+            <table>
+                <thead><tr><th>#</th><th>Check</th><th>What It Catches</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Exp-Date Mismatch</td><td>Claims 10yr, career totals 4yr</td></tr>
+                    <tr><td>2</td><td>Skill Inflation</td><td>"Expert" × 5 with &lt;3mo each</td></tr>
+                    <tr><td>3</td><td>Title-Desc Mismatch</td><td>HR title but ML descriptions</td></tr>
+                    <tr><td>4</td><td>Impossible Timeline</td><td>60mo role spanning 12mo</td></tr>
+                    <tr><td>5</td><td>Keyword Stuffing</td><td>20 AI skills, 0 career mentions</td></tr>
+                    <tr><td>6</td><td>Perfect Signals</td><td>All 1.0 scores on suspicious profile</td></tr>
+                </tbody>
+            </table>
+            <div class="highlight-box" style="margin-top: 20px;">
+                <p style="color: #e2e8f0;"><strong>Result:</strong> 479 honeypots detected out of 92,530 scored candidates. <span class="badge badge-green">0 honeypots in top 100</span></p>
+            </div>
+
+            <h3 style="margin-top: 20px;">Hallucination Prevention</h3>
+            <ul>
+                <li>Reasoning only references fields present in the candidate dict</li>
+                <li>Skills, companies, titles extracted directly — never generated</li>
+                <li>100/100 reasonings verified unique</li>
+            </ul>
+        </div>
+    </div>
+    <span class="page-number">5</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 6: Results & Performance -->
+<!-- ============================================================ -->
+<div class="slide slide-dark">
+    <h2>Results & Performance</h2>
+    <div class="grid-4" style="margin-bottom: 32px;">
+        <div class="card card-metric">
+            <div class="metric-value">68.3s</div>
+            <div class="metric-label">Runtime</div>
+        </div>
+        <div class="card card-metric">
+            <div class="metric-value">100K</div>
+            <div class="metric-label">Candidates</div>
+        </div>
+        <div class="card card-metric">
+            <div class="metric-value">479</div>
+            <div class="metric-label">Honeypots Found</div>
+        </div>
+        <div class="card card-metric">
+            <div class="metric-value">0%</div>
+            <div class="metric-label">Honeypots in Top 100</div>
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <div>
+            <h3>Top 5 Ranked Candidates</h3>
+            <table>
+                <thead><tr><th>Rank</th><th>Score</th><th>Key Signal</th></tr></thead>
+                <tbody>
+                    <tr><td>#1</td><td>0.8466</td><td>RAG/Weaviate expert, 7yr, strong credibility</td></tr>
+                    <tr><td>#2</td><td>0.8025</td><td>Genpact AI → LinkedIn, product track</td></tr>
+                    <tr><td>#3</td><td>0.8019</td><td>OpenSearch specialist, 6yr, good engagement</td></tr>
+                    <tr><td>#4</td><td>0.7896</td><td>Amazon, 6yr, actively seeking</td></tr>
+                    <tr><td>#5</td><td>0.7888</td><td>Sarvam AI Sr Applied Scientist</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Compute Compliance</h3>
+            <table>
+                <thead><tr><th>Constraint</th><th>Limit</th><th>Actual</th><th>Status</th></tr></thead>
+                <tbody>
+                    <tr><td>Runtime</td><td>≤ 5 min</td><td>68s</td><td><span class="badge badge-green">✓</span></td></tr>
+                    <tr><td>Memory</td><td>≤ 16 GB</td><td>~4 GB</td><td><span class="badge badge-green">✓</span></td></tr>
+                    <tr><td>Compute</td><td>CPU only</td><td>CPU</td><td><span class="badge badge-green">✓</span></td></tr>
+                    <tr><td>Network</td><td>None</td><td>Offline</td><td><span class="badge badge-green">✓</span></td></tr>
+                    <tr><td>Validator</td><td>Pass</td><td>Pass</td><td><span class="badge badge-green">✓</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <span class="page-number">6</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 7: Tech Stack & Architecture -->
+<!-- ============================================================ -->
+<div class="slide slide-accent">
+    <h2>Tech Stack & Repository</h2>
+    <div class="grid-2">
+        <div>
+            <h3>Project Structure</h3>
+<pre style="font-size: 0.8rem;">
+redrob-ranker/
+├── rank.py                 ← CLI entry point
+├── app.py                  ← Streamlit sandbox
+├── src/
+│   ├── config.py           ← JD-tuned constants
+│   ├── jd_parser.py        ← TF-IDF vectorizer
+│   ├── filters.py          ← Stage 1 hard filters
+│   ├── features.py         ← 6-dimension scoring (737 lines)
+│   ├── scorer.py           ← Weighted score fusion
+│   ├── honeypot.py         ← 6-check detector (449 lines)
+│   └── reasoning.py        ← 5-pattern generator (445 lines)
+├── requirements.txt
+├── Dockerfile
+├── README.md
+└── submission_metadata.yaml
+</pre>
+            <p style="color: #a0aec0; margin-top: 16px;">
+                <strong>Total:</strong> ~3,600 lines of Python across 8 modules
+            </p>
+        </div>
+        <div>
+            <h3>Technology Choices</h3>
+            <table>
+                <thead><tr><th>Tech</th><th>Why</th></tr></thead>
+                <tbody>
+                    <tr><td><code>Python 3.11</code></td><td>Industry standard, fast enough</td></tr>
+                    <tr><td><code>scikit-learn TF-IDF</code></td><td>CPU-friendly, no model download, trigram support</td></tr>
+                    <tr><td><code>pandas/numpy</code></td><td>Data handling, no overhead</td></tr>
+                    <tr><td><code>Streamlit</code></td><td>Interactive sandbox for judges</td></tr>
+                    <tr><td><code>Docker</code></td><td>Reproducible sandbox environment</td></tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 24px;">Reproduce in 1 Command</h3>
+<pre style="font-size: 0.85rem;">
+python rank.py \
+  --candidates ./candidates.jsonl \
+  --out ./submission.csv
+</pre>
+            <p style="color: #a0aec0; margin-top: 12px;">
+                GitHub: <a href="https://github.com/404-GeniusNotFound/redrob-ranker" style="color: #667eea;">github.com/404-GeniusNotFound/redrob-ranker</a>
+            </p>
+        </div>
+    </div>
+    <span class="page-number">7</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SLIDE 8: Thank You -->
+<!-- ============================================================ -->
+<div class="slide slide-hero">
+    <h1>Thank You</h1>
+    <p class="subtitle" style="margin-bottom: 40px;">
+        Built with care for the Redrob Hackathon 2026
+    </p>
+    <div class="grid-3" style="max-width: 800px; margin: 0 auto;">
+        <div class="card card-metric">
+            <div class="metric-value" style="font-size: 1.8rem;">Sathvik V</div>
+            <div class="metric-label">Solo Builder</div>
+        </div>
+        <div class="card card-metric">
+            <div class="metric-value" style="font-size: 1.8rem;">3,600+</div>
+            <div class="metric-label">Lines of Code</div>
+        </div>
+        <div class="card card-metric">
+            <div class="metric-value" style="font-size: 1.8rem;">68s</div>
+            <div class="metric-label">100K Candidates</div>
+        </div>
+    </div>
+    <p style="color: #a0aec0; margin-top: 40px; font-size: 0.9rem;">
+        🔗 GitHub: <a href="https://github.com/404-GeniusNotFound/redrob-ranker" style="color: #667eea;">404-GeniusNotFound/redrob-ranker</a>
+    </p>
+    <span class="page-number">8</span>
+</div>
+
+</body>
+</html>
