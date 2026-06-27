@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0018499,1,0.8466,"Strong education & credibility profile — 7 years with depth in RAG, scikit-learn, Weaviate; matches the JD need for production embeddings & retrieval experience."
+CAND_0046525,2,0.8025,"6-year career spanning Genpact AI, LinkedIn; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0042029,3,0.8019,Proven OpenSearch background with 6+ years of applied experience and good recruiter engagement despite not being marked open to work.
+CAND_0052328,4,0.7896,"Career history shows 6 years across 2 companies, most recently at Amazon; actively seeking roles with strong engagement signals."
+CAND_0086022,5,0.7888,Senior Applied Scientist with 5.3 years at Sarvam AI; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0029367,6,0.7852,"Strong career coherence profile — 6 years with depth in Sentence Transformers, FAISS, RAG; matches the JD need for production embeddings & retrieval experience."
+CAND_0077337,7,0.7754,"7-year career spanning Paytm, Razorpay, Glance; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0008425,8,0.7681,Proven Sentence Transformers background with 8+ years of applied experience and currently open to new opportunities.
+CAND_0065195,9,0.7665,"Career history shows 5 years across 2 companies, most recently at CRED; actively seeking roles with strong engagement signals."
+CAND_0039754,10,0.7646,Senior Applied Scientist with 16.2 years at Meta; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0071974,11,0.7645,"Strong career coherence profile — 8 years with depth in Elasticsearch, Qdrant, Weaviate; matches the JD need for production embeddings & retrieval experience."
+CAND_0041669,12,0.7638,"8-year career spanning CRED, Mad Street Den, Yellow.ai; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0006567,13,0.7570,Proven Prompt Engineering background with 8+ years of applied experience and actively seeking roles with strong engagement signals.
+CAND_0081846,14,0.7567,"Career history shows 7 years across 2 companies, most recently at Razorpay; actively seeking roles with strong engagement signals."
+CAND_0093547,15,0.7534,"Senior Machine Learning Engineer with 2.9 years at PhonePe; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, not currently marked open to work."
+CAND_0005260,16,0.7532,"Strong career coherence profile — 5 years with depth in Embeddings, NLP, Prompt Engineering; matches the JD need for production embeddings & retrieval experience. Note: not currently marked open to work."
+CAND_0064326,17,0.7526,"8-year career spanning Sarvam AI, Aganitha, Freshworks; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0064270,18,0.7524,Proven Hugging Face Transformers background with 4.2 years of experience and good recruiter engagement despite not being marked open to work. Limitation: not currently marked open to work.
+CAND_0027691,19,0.7521,"Career history shows 6 years across 3 companies, most recently at Haptik; currently open to new opportunities."
+CAND_0079064,20,0.7518,Senior Data Scientist with 5.2 years at Niramai; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0091534,21,0.7515,"Strong education & credibility profile — 17 years with depth in RAG, scikit-learn, LangChain; matches the JD need for production embeddings & retrieval experience. Note: not currently marked open to work."
+CAND_0051004,22,0.7479,"5-year career spanning CRED, Niramai; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0061265,23,0.7469,Proven Learning to Rank background with 7+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: 120-day notice period.
+CAND_0007009,24,0.7468,"Career history shows 8 years across 3 companies, most recently at Wysa; currently open to new opportunities."
+CAND_0093193,25,0.7422,Senior Machine Learning Engineer with 7.9 years at Niramai; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0096142,26,0.7416,"Strong career coherence profile — 5 years with depth in Python, BM25, Pinecone; matches the JD need for production embeddings & retrieval experience. Note: 120-day notice period."
+CAND_0006418,27,0.7371,"6-year career spanning Verloop.io, Flipkart; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0010257,28,0.7364,Proven Python background with 6+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: 120-day notice period.
+CAND_0091909,29,0.7355,"Career history shows 7 years across 2 companies, most recently at Rephrase.ai; currently open to new opportunities."
+CAND_0094759,30,0.7353,"Lead AI Engineer with 8.6 years at Meta; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, low recruiter response rate (11%)."
+CAND_0080766,31,0.7329,"Strong career coherence profile — 9 years with depth in TensorFlow, Search & Discovery, LoRA; matches the JD need for production embeddings & retrieval experience. Note: not currently marked open to work."
+CAND_0037566,32,0.7323,"7-year career spanning LinkedIn, Paytm; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0081053,33,0.7317,Proven Semantic Search background with 5+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: 90-day notice period.
+CAND_0007460,34,0.7316,"Career history shows 5 years across 1 company, most recently at Salesforce; currently open to new opportunities. 120-day notice period."
+CAND_0020877,35,0.7312,"Applied ML Engineer with 5.1 years at CRED; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, not currently marked open to work."
+CAND_0074735,36,0.7295,"Strong education & credibility profile — 6 years with depth in Learning to Rank, Vector Search, Prompt Engineering; matches the JD need for production embeddings & retrieval experience. Note: 90-day notice period."
+CAND_0005649,37,0.7292,"7-year career spanning Sarvam AI, Aganitha, Amazon; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: 90-day notice period."
+CAND_0042506,38,0.7279,Proven Information Retrieval background with 4.2 years of experience and currently open to new opportunities.
+CAND_0009024,39,0.7268,"Career history shows 5 years across 2 companies, most recently at Google; currently open to new opportunities."
+CAND_0061257,40,0.7252,Staff Machine Learning Engineer with 8.0 years at LinkedIn; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0037980,41,0.7251,"Strong career coherence profile — 9 years with depth in BM25, LoRA, PyTorch; matches the JD need for production embeddings & retrieval experience."
+CAND_0043228,42,0.7248,"7-year career spanning Zoho, Vedantu, Yellow.ai; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: not currently marked open to work."
+CAND_0064904,43,0.7247,Proven TensorFlow background with 4.9 years of experience and actively seeking roles with strong engagement signals. Limitation: 90-day notice period.
+CAND_0015578,44,0.7234,"Career history shows 5 years across 2 companies, most recently at Zoho; currently open to new opportunities. 90-day notice period."
+CAND_0002025,45,0.7233,Senior AI Engineer with 5.9 years at Apple; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0074225,46,0.7231,"Strong career coherence profile — 4 years with depth in Milvus, Vector Search, Python; matches the JD need for production embeddings & retrieval experience. Note: 120-day notice period."
+CAND_0068811,47,0.7223,"8-year career spanning Freshworks, Yellow.ai, Meesho; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0007412,48,0.7219,Proven Pinecone background with 7+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: avg tenure of 17mo may indicate job-hopping.
+CAND_0004402,49,0.7217,"Career history shows 6 years across 2 companies, most recently at Yellow.ai; actively seeking roles with strong engagement signals."
+CAND_0088025,50,0.7216,"Staff Machine Learning Engineer with 8.6 years at Yellow.ai; matches the JD need for production embeddings & retrieval experience. However, 90-day notice period."
+CAND_0028793,51,0.7214,"Strong education & credibility profile — 7 years with depth in LoRA, Embeddings, Learning to Rank; matches the JD need for production embeddings & retrieval experience. Note: 120-day notice period."
+CAND_0070202,52,0.7207,"5-year career spanning BYJU'S, Dream11; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: not currently marked open to work."
+CAND_0046064,53,0.7206,Proven PEFT background with 9+ years of applied experience and actively seeking roles with strong engagement signals.
+CAND_0070398,54,0.7201,"Career history shows 7 years across 3 companies, most recently at Genpact AI; currently open to new opportunities. 120-day notice period."
+CAND_0047721,55,0.7167,"Senior Data Scientist with 7.0 years at Microsoft; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, not currently marked open to work."
+CAND_0060072,56,0.7158,"Strong career coherence profile — 6 years with depth in Prompt Engineering, BM25, Pinecone; matches the JD need for production embeddings & retrieval experience. Note: low recruiter response rate (10%)."
+CAND_0081480,57,0.7155,"6-year career spanning Sarvam AI, Unacademy; demonstrates production embeddings & retrieval experience and including product-company experience."
+CAND_0079284,58,0.7145,Proven Elasticsearch background with 4.9 years of experience and good recruiter engagement despite not being marked open to work. Limitation: not currently marked open to work.
+CAND_0066376,59,0.7140,"Career history shows 6 years across 2 companies, most recently at Dream11; currently open to new opportunities. 90-day notice period."
+CAND_0093912,60,0.7109,Senior Data Scientist with 5.3 years at Razorpay; matches the JD need for production embeddings & retrieval experience; including product-company experience.
+CAND_0044855,61,0.7102,"Strong career coherence profile — 7 years with depth in Information Retrieval, Learning to Rank, OpenSearch; matches the JD need for production embeddings & retrieval experience. Note: borderline fit — not currently marked open to work."
+CAND_0019480,62,0.7092,"3-year career spanning Meesho, InMobi, Vedantu; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit — 90-day notice period."
+CAND_0068351,63,0.7091,Proven PEFT background with 6+ years of applied experience and good recruiter engagement despite not being marked open to work. Limitation: borderline fit — not currently marked open to work.
+CAND_0030348,64,0.7088,"Career history shows 4 years across 2 companies, most recently at BYJU'S; currently open to new opportunities. Borderline fit for the senior ai engineer profile."
+CAND_0060054,65,0.7073,"AI Engineer with 6.4 years at Mad Street Den; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit — not currently marked open to work."
+CAND_0027801,66,0.7070,"Strong education & credibility profile — 7 years with depth in FAISS, Milvus, TensorFlow; matches the JD need for production embeddings & retrieval experience. Note: borderline fit — 120-day notice period."
+CAND_0089552,67,0.7069,"6-year career spanning Netflix, Mad Street Den; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit — not currently marked open to work."
+CAND_0030468,68,0.7059,Proven OpenSearch background with 5+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: borderline fit for the senior AI engineer profile.
+CAND_0054123,69,0.7058,"Career history shows 5 years across 2 companies, most recently at Meta; good recruiter engagement despite not being marked open to work. Borderline fit — not currently marked open to work."
+CAND_0079387,70,0.7047,"AI Engineer with 6.9 years at Microsoft; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit for the senior AI engineer profile."
+CAND_0007411,71,0.7041,"Strong career coherence profile — 8 years with depth in OpenSearch, BM25, PyTorch; matches the JD need for production embeddings & retrieval experience. Note: borderline fit — low recruiter response rate (12%)."
+CAND_0062247,72,0.7033,"7-year career spanning Google, Dream11; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit for the senior AI engineer profile."
+CAND_0016163,73,0.7029,Proven TensorFlow background with 7+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: borderline fit — 120-day notice period.
+CAND_0073314,74,0.7021,"Career history shows 5 years across 2 companies, most recently at Aganitha; actively seeking roles with strong engagement signals. Borderline fit for the senior ai engineer profile."
+CAND_0041610,75,0.7009,"Recommendation Systems Engineer with 6.7 years at Zoho; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit for the senior AI engineer profile."
+CAND_0018549,76,0.7005,"Strong career coherence profile — 7 years with depth in Prompt Engineering, LangChain, Milvus; matches the JD need for production embeddings & retrieval experience. Note: borderline fit for the senior AI engineer profile."
+CAND_0054546,77,0.7003,5-year career spanning Razorpay; demonstrates vector database / hybrid search infrastructure and including product-company experience. Caveat: borderline fit — 90-day notice period.
+CAND_0049538,78,0.7000,Proven Elasticsearch background with 6+ years of applied experience and good recruiter engagement despite not being marked open to work. Limitation: borderline fit — not currently marked open to work.
+CAND_0084819,79,0.6994,"Career history shows 4 years across 2 companies, most recently at Dream11; actively seeking roles with strong engagement signals. Borderline fit — 120-day notice period."
+CAND_0033861,80,0.6987,"Senior NLP Engineer with 8.0 years at Mad Street Den; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit — low recruiter response rate (16%)."
+CAND_0057563,81,0.6983,"Strong career coherence profile — 7 years with depth in OpenSearch, RAG, Elasticsearch; matches the JD need for production embeddings & retrieval experience. Note: borderline fit — not currently marked open to work."
+CAND_0030784,82,0.6979,"4-year career spanning Yellow.ai, Flipkart; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit — 90-day notice period."
+CAND_0058575,83,0.6978,Proven Hugging Face Transformers background with 6+ years of applied experience and currently open to new opportunities. Limitation: borderline fit — 90-day notice period.
+CAND_0011687,84,0.6972,"Career history shows 8 years across 2 companies, most recently at Niramai; actively seeking roles with strong engagement signals. Borderline fit for the senior ai engineer profile."
+CAND_0050876,85,0.6968,"Applied ML Engineer with 6.0 years at Freshworks; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit — 90-day notice period."
+CAND_0051692,86,0.6961,"Strong career coherence profile — 3 years with depth in Learning to Rank, Image Classification, QLoRA; matches the JD need for production embeddings & retrieval experience. Note: borderline fit — 120-day notice period."
+CAND_0012957,87,0.6960,"5-year career spanning Razorpay, Mad Street Den; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit — not currently marked open to work."
+CAND_0070514,88,0.6959,Proven GANs background with 6+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: borderline fit for the senior AI engineer profile.
+CAND_0003977,89,0.6949,"Career history shows 5 years across 2 companies, most recently at Google; moderate platform engagement. Borderline fit — not currently marked open to work."
+CAND_0011432,90,0.6943,"Senior Data Scientist with 7.6 years at Amazon; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit for the senior AI engineer profile."
+CAND_0052682,91,0.6936,"Strong education & credibility profile — 7 years with depth in Semantic Search, Python, QLoRA; matches the JD need for production embeddings & retrieval experience. Note: borderline fit for the senior AI engineer profile."
+CAND_0042100,92,0.6913,"7-year career spanning Freshworks, Netflix; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit — 90-day notice period."
+CAND_0075249,93,0.6906,Proven Fine-tuning LLMs background with 6+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: borderline fit for the senior AI engineer profile.
+CAND_0001131,94,0.6904,"Career history shows 6 years across 2 companies, most recently at Wysa; currently open to new opportunities. Borderline fit — 90-day notice period."
+CAND_0095528,95,0.6901,"5-year career spanning Netflix, Adobe; demonstrates production embeddings & retrieval experience and including product-company experience. Caveat: borderline fit for the senior AI engineer profile."
+CAND_0095619,96,0.6901,"NLP Engineer with 15.6 years at Nykaa; matches the JD need for production embeddings & retrieval experience. However, borderline fit for the senior AI engineer profile."
+CAND_0099347,97,0.6901,"Strong location fit profile — 4 years with depth in ASR, Computer Vision, Reinforcement Learning; matches the JD need for production embeddings & retrieval experience. Note: borderline fit for the senior AI engineer profile."
+CAND_0005538,98,0.6896,Proven pgvector background with 6+ years of applied experience and actively seeking roles with strong engagement signals. Limitation: borderline fit — avg tenure of 17mo may indicate job-hopping.
+CAND_0009837,99,0.6886,"Career history shows 4 years across 1 company, most recently at Rephrase.ai; moderate platform engagement. Borderline fit — not currently marked open to work."
+CAND_0039521,100,0.6872,"Search Engineer with 3.0 years at Salesforce; matches the JD need for production embeddings & retrieval experience; including product-company experience. However, borderline fit — not currently marked open to work."

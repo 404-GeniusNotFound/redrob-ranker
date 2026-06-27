@@ -1,0 +1,76 @@
+# Redrob Hackathon — Submission Metadata
+# Team: Sathvik V (Solo)
+
+team_name: "sathvik-v"
+
+primary_contact:
+  name: "Sathvik V"
+  email: "UPDATE_EMAIL_HERE"
+  phone: "UPDATE_PHONE_HERE"
+
+team_members:
+  - name: "Sathvik V"
+    email: "UPDATE_EMAIL_HERE"
+    role: "Solo Participant — Full Stack ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/UPDATE_USERNAME/redrob-ranker"
+
+sandbox_link: "UPDATE_AFTER_DEPLOY"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Pro"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "macOS"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+
+ai_usage_summary: |
+  Used Google Gemini (via Antigravity agent) for architecture discussion, 
+  code scaffolding, and review. All core ranking logic, scoring weights, 
+  and feature engineering decisions are my own design based on careful 
+  analysis of the JD and dataset. No candidate data was sent to any LLM 
+  during the ranking process — the system runs fully offline.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  5-stage pipeline: hard filters, multi-dimensional feature engineering,
+  weighted score fusion, honeypot detection, and reasoning generation.
+  Six scoring dimensions: career-narrative coherence (product vs services,
+  tenure stability, role progression), skill-depth authenticity (must-have
+  coverage weighted by duration and assessment scores), JD semantic alignment
+  (TF-IDF with trigrams), behavioral availability (recency, response rate,
+  notice period), location fit, and education credibility. Honeypot detection
+  uses 6 anomaly checks (experience-date mismatch, skill inflation,
+  title-description incoherence, impossible timelines, keyword stuffing
+  patterns, abnormal signal combinations). Runtime ~90 seconds for 100K
+  candidates on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
