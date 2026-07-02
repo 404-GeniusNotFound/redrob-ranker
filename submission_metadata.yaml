@@ -5,12 +5,12 @@ team_name: "sathvik-v"
 
 primary_contact:
   name: "Sathvik V"
-  email: "UPDATE_EMAIL_HERE"
-  phone: "UPDATE_PHONE_HERE"
+  email: "sathvik.vishwanath05@gmail.com"
+  phone: "+91 8431003061"
 
 team_members:
   - name: "Sathvik V"
-    email: "UPDATE_EMAIL_HERE"
+    email: "sathvik.vishwanath05@gmail.com"
     role: "Solo Participant — Full Stack ML Engineer"
 
 # ============================================================================

@@ -232,9 +232,10 @@ with st.sidebar:
     )
 
     # Find data files
-    base_path = Path(__file__).parent.parent / "India_runs_data_and_ai_challenge"
-    sample_path = base_path / "sample_candidates.json"
-    full_path = base_path / "candidates.jsonl"
+    # Sample path is local to the repo so it works on Streamlit Cloud
+    sample_path = Path(__file__).parent / "data" / "sample_candidates.json"
+    # Full path might only exist locally during development
+    full_path = Path(__file__).parent.parent / "India_runs_data_and_ai_challenge" / "candidates.jsonl"
 
     if data_option == "Full (100K candidates)":
         if full_path.exists():
