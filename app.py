@@ -223,29 +223,10 @@ def render_score_bar(label, score, max_score, weight):
 with st.sidebar:
     st.markdown("### 🎯 Pipeline Controls")
 
-    # Data source selection
-    data_option = st.radio(
-        "Dataset",
-        ["Sample (50 candidates)", "Full (100K candidates)"],
-        index=0,
-        help="Choose the dataset to run the pipeline on"
-    )
-
     # Find data files
-    # Sample path is local to the repo so it works on Streamlit Cloud
-    sample_path = Path(__file__).parent / "data" / "sample_candidates.json"
-    # Full path might only exist locally during development
-    full_path = Path(__file__).parent.parent / "India_runs_data_and_ai_challenge" / "candidates.jsonl"
-
-    if data_option == "Full (100K candidates)":
-        if full_path.exists():
-            data_path = str(full_path)
-            st.info("⚡ Full dataset: ~68s runtime")
-        else:
-            st.warning("Full dataset not found. Using sample.")
-            data_path = str(sample_path)
-    else:
-        data_path = str(sample_path)
+    # Sandbox uses the local sample file (as per the <100 candidate sandbox requirement)
+    data_path = str(Path(__file__).parent / "data" / "sample_candidates.json")
+    st.info("⚡ Sandbox mode: using 50 sample candidates")
 
     st.markdown("---")
 
@@ -402,7 +383,7 @@ if run_button or "results" in st.session_state:
         scores_list = [r["score"] for r in results]
         st.markdown(f"""
         **Score range**: {max(scores_list):.4f} → {min(scores_list):.4f} |
-        **Median**: {sorted(scores_list)[50]:.4f} |
+        **Median**: {sorted(scores_list)[len(scores_list)//2]:.4f} |
         **Spread**: {max(scores_list) - min(scores_list):.4f}
         """)
 
