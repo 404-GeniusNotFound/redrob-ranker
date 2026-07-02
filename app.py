@@ -407,7 +407,7 @@ if run_button or "results" in st.session_state:
         st.markdown("### 🔍 Candidate Deep Dive")
         selected_rank = st.selectbox(
             "Select a candidate to inspect",
-            range(1, 101),
+            range(1, len(results) + 1),
             format_func=lambda x: f"Rank #{x}: {results[x-1]['candidate_id']} — {results[x-1]['candidate'].get('profile', {}).get('current_title', 'N/A')}"
         )
 
