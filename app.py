@@ -225,8 +225,8 @@ with st.sidebar:
 
     # Find data files
     # Sandbox uses the local sample file (as per the <100 candidate sandbox requirement)
-    data_path = str(Path(__file__).parent / "data" / "sample_candidates.json")
-    st.info("⚡ Sandbox mode: using 50 sample candidates")
+    data_path = str(Path(__file__).parent / "data" / "sandbox_candidates.jsonl")
+    st.info("⚡ Sandbox mode: 120 sample candidates")
 
     st.markdown("---")
 
@@ -377,7 +377,7 @@ if run_button or "results" in st.session_state:
 
     # ── Tab 1: Rankings ──────────────────────────────────────────────────
     with tab1:
-        st.markdown("### Top 100 Ranked Candidates")
+        st.markdown(f"### Top {len(results)} Ranked Candidates")
 
         # Quick stats
         scores_list = [r["score"] for r in results]
